@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>SQL Injection Basic</title>
+</head>
+<body>
+  <h1>SQL Injection Basic</h1>
+
+  <h2>문제 정보</h2>
+  <ul>
+    <li>분야: Web</li>
+    <li>플랫폼: DreamHack</li>
+  </ul>
+
+  <h2>문제 분석</h2>
+  <p>
+  로그인 입력값이 SQL 쿼리에 그대로 들어가는 구조였다.
+  </p>
+
+  <h2>취약점</h2>
+  <p>
+  사용자 입력값에 대한 검증이 없어 SQL Injection이 가능했다.
+  </p>
+
+  <h2>풀이 과정</h2>
+  <p>
+  기본 로그인 우회 payload를 테스트했다.
+  </p>
+
+  <pre>
+' OR '1'='1
+  </pre>
+
+  <p>
+  이후 admin 계정 조건을 만족시키는 방식으로 접근했다.
+  </p>
+
+  <h2>배운 점</h2>
+  <p>
+  단순 payload 암기가 아니라 쿼리 구조를 이해하는 것이 중요하다는 것을 느꼈다.
+  </p>
+
+</body>
+</html>
